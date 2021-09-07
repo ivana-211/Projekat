@@ -5553,11 +5553,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projekat\\webapi\\webapi.csproj",
+      "projectUniqueName": "C:\\Users\\IvanaPC\\Dropbox\\My PC (DESKTOP-R2BLP4E)\\Documents\\GitHub\\Projekat\\webapi\\webapi.csproj",
       "projectName": "webapi",
-      "projectPath": "C:\\Projekat\\webapi\\webapi.csproj",
+      "projectPath": "C:\\Users\\IvanaPC\\Dropbox\\My PC (DESKTOP-R2BLP4E)\\Documents\\GitHub\\Projekat\\webapi\\webapi.csproj",
       "packagesPath": "C:\\Users\\IvanaPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Projekat\\webapi\\obj\\",
+      "outputPath": "C:\\Users\\IvanaPC\\Dropbox\\My PC (DESKTOP-R2BLP4E)\\Documents\\GitHub\\Projekat\\webapi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\IvanaPC\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w79NbGD0tK62tAAefycm2M6VwJlnRUbSSOLtM8F2Bf/AikZXyROrqkjrEWRh1MG1j14zgvkvI5g1pi3xVdihOg==",
+  "dgSpecHash": "uO9fhiIZw+YT/F6dLEK+y/9J26NaQ/BC8EY7UltrUuI4FZ3ZUkaF6kmRAJTidFktYy973JA0xQnfxWp9meAHwQ==",
   "success": true,
-  "projectFilePath": "C:\\Projekat\\webapi\\webapi.csproj",
+  "projectFilePath": "C:\\Users\\IvanaPC\\Dropbox\\My PC (DESKTOP-R2BLP4E)\\Documents\\GitHub\\Projekat\\webapi\\webapi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\IvanaPC\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\IvanaPC\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.0\\microsoft.aspnetcore.authentication.jwtbearer.5.0.0.nupkg.sha512",
