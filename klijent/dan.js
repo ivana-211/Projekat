@@ -9,7 +9,6 @@ export class Dan {
         this.kontejnerDana = null;
     }
 
-    
     crtajDan(host)
     {
         this.kontejnerDana = host;
