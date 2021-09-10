@@ -128,7 +128,20 @@ export class Nedelja {
         kontejnerForma.appendChild(dugmeIzbrisi);
         dugmeIzbrisi.onclick = (ev) =>
         {
-            this.azurirajSve();
+            fetch("https://localhost:5001/Vezbanje/IzbrisiNedelju/" + this.id,
+            {
+                method: "DELETE"
+            })
+            .then(res => 
+                {
+                    if(res.ok)
+                    {
+                        while(this.kontejner.lastChild)
+                        this.kontejner.removeChild(this.kontejner.lastChild);
+                        this.crtajFormu(this.kontejner);
+                        this.crtajNedelju(this.kontejner);
+                    };
+                });
         }
     }
 
@@ -146,19 +159,22 @@ export class Nedelja {
         });
     }
 
-    azurirajSve()
+    /*azurirajSve()
     {
-        document.body.innerHTML = "";
-        fetch("https://localhost:5001/Vezbanje/PreuzmiNedelje").then((res) =>
+        fetch("https://localhost:5001/Vezbanje/IzbrisiNedelju/" + this.id,
         {
-            res.json().then((data) =>
+            method: "DELETE",
+        })
+        .then((res) => console.log(res))
+        .catch((res) => console.log(res));
+        
+            /*res.json().then((data) =>
                 {
                     data.forEach((ned) =>
                     {
                         const novaNedelja = new Nedelja("Nova nedelja", ned.id);
                         novaNedelja.crtaj(document.body);
                     });
-                });
-        });
-    }
+                });*/
+    
 }

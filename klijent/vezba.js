@@ -4,6 +4,7 @@ export class Vezba {
         this.workout = workout;
         this.boja = boja;
         this.dan = dan;
+        this.id = 0;
     }
 
     odrediBoju(boja, host)

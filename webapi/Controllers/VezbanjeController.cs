@@ -47,7 +47,7 @@ namespace webapi.Controllers
         [HttpDelete]
         public async Task<IActionResult>IzbrisiNedelju(int id)
         {
-            //Console.WriteLine(id);
+            Console.WriteLine(id);
             var nedelja = await Context.FindAsync<Nedelja>(id);
             Context.Remove(nedelja);
             await Context.SaveChangesAsync();

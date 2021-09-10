@@ -51,7 +51,8 @@ export class Dan {
                             var id = 0;
                             p.json().then(p => id = p);
                             this.listaVezbi.push(new Vezba(workout, boja, this.naziv));
-                            this.azurirajID;
+                            //this.azurirajID();
+                            this.listaVezbi.id = this.id;
                             this.azurirajDan();
                         }
                     });
@@ -83,6 +84,7 @@ export class Dan {
                     workout: workout,
                     boja: boja,
                     dan: this.naziv,
+                    id: this.listaVezbi[i].id,
                 })
         }).then(p =>
             {
@@ -101,18 +103,18 @@ export class Dan {
         this.crtajDan(this.kontejnerDana);
     }
 
-    azurirajID()
+    /*azurirajID()
     {
         fetch("https://localhost:5001/Vezbanje/PreuzmiDane").then(p =>
         {
             p.json().then(data =>
                 {
                     let i = data.findIndex(dan => dan.id == this.id)
-                    i.vezbe.forEach((vezba, j) =>
+                    i.listaVezbi.forEach((vezba, j) =>
                     {
                         this.listaVezbi[j].id = vezba.id;
                     });
                 });
         });
-    }
+    }*/
 }

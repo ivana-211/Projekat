@@ -24,6 +24,10 @@ fetch("https://localhost:5001/Vezbanje/PreuzmiNedelje").then(p =>
                 {
                     const nedelja1 = new Nedelja("Trenutna nedelja", nedelja.id);
                     nedelja1.crtaj(document.body);
+                    console.log(nedelja1);
+
+                    /*const nedelja2 = new Nedelja("Sledeca nedelja", nedelja.id);
+                    nedelja2.crtaj(document.body); */
                 });
         });
 })
